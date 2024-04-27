@@ -152,6 +152,7 @@ header .logo {
   font-weight: 100;
   text-align: justify;
   margin: 21px;
+  font-weight: bolder;
 }
 
 #about a {
@@ -162,6 +163,7 @@ header .logo {
   text-decoration: none;
   background-color: green;
   border-radius: 7px;
+	font-weight: bolder;
 }
 
 /* Products section */
