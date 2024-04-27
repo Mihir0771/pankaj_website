@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-brand">
+				<a href="#" class="logo"><img src="res/aj.PNG" alt=""></a>
+			</div>
+			<ul class="navbar-nav" id="menuItems">
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#products">Products</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="burger" onclick="toggleMenu()" onclick="toggleMenuC()">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<button id="call"><a href="tel:8401413250">Call Us Now</a></button>
+
+		<section id="hero">
+			<video autoplay muted loop id="myVideo">
+				<source src="res/fall.mp4" type="video/mp4">
+			</video>
+			<h1>Welcome to</h1>
+			<h1>A & J PHARMACEUTICALS</h1>
+			<p>Your trusted partner for all your healthcare needs.</p>
+			<a href="#services" class="cta">Learn More</a>
+		</section>
+
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Welcome to A & J Pharmaceuticals, where innovation meets compassion in healthcare. </p>
+			<p>We're dedicated to pushing the boundaries of pharmaceutical research, delivering high-quality medications
+				affordably. But what truly sets us apart is our commitment to personalized care and support for every
+				patient.</p>
+			<p>Join us in shaping the future of healthcare, where innovation, compassion, and excellence converge for a
+				brighter tomorrow.</p>
+			<p>Welcome to A & J Pharmaceuticals.</p>
+			<a href="about.html" class="cta">Learn More</a>
+		</section>
+
+		<section id="products">
+			<h2>Our Products</h2>
+			<div id="d_products">
+				<span class="proname"><button class="pro"><img src="res/pro/1.png" alt=""></button><span class="pron">PHARMA</span></span>
+				<span class="proname"><button class="pro"><img src="res/pro/4.png" alt=""></button><span class="pron">COSMETICS</span></span>
+				<span class="proname"><button class="pro"><img src="res/pro/2.png" alt=""></button><span class="pron">NUTRA</span></span>
+				<span class="proname"><button class="pro"><img src="res/pro/3.png" alt=""></button><span class="pron">HERBAL</span></span>
+				<span class="proname"><button class="pro"><img src="res/pro/5.png" alt=""></button><span class="pron">EXTERNAL PREPARATION</span></span>
+			</div>
+			<div class="cent"><a href="#" onclick="poppop()">Find More</a></div>
+		</section>
+
+		<section id="services">
+			<h2>Our Services</h2>
+			<div class="service">
+				<h3>Primary Care</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+					dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+			</div>
+			<div class="service">
+				<h3>Specialty Care</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+					dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+			</div>
+			<div class="service">
+				<h3>Diagnostic Services</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+					dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+			</div>
+		</section>
+		<section id="extra">
+			<h2>We Stands For</h2>
+			<img src="res/extra.png" alt="">
+		</section>
+		<section id="map">
+			<h2>Our Footprint</h2>
+			<img src="res/map.png" alt="">
+		</section>
+		<section id="Directors">
+			<h2>Our Directors</h2>
+			<div class="director">
+				<img src="res/D1.jpg" id="d1" alt="">
+				<h3>Neha Kewalramani</h3>
+				<p></p>
+			</div>
+			<div class="director">
+				<img src="res/D2.jpg" id="d2" alt="">
+				<h3>Ashraf N. Ghoghari</h3>
+				<p></p>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container2">
+				<h2>Contact Us</h2>
+				<!-- <form id="contact-form">
+					<div class="form-group" action="process.php" method="post">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" rows="4" required></textarea>
+					</div>
+					<button type="submit">Send Message</button>
+				</form>
+				<div id="message-status"></div> -->
+			
+				<div id="con1">
+					<img src="res/contact.png" alt="">
+				</div>
+			
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 A & J PHARMACEUTICAL. All rights reserved.</p>
+	</footer>
+	<script src="home.js"></script>
+</body>
+
+</html>
