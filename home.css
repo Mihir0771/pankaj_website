@@ -104,10 +104,11 @@ header .logo {
 #myVideo { 
     object-fit: cover;
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
+    opacity: 0.5;
   }
 
 #hero {
@@ -163,20 +164,22 @@ header .logo {
   text-decoration: none;
   background-color: green;
   border-radius: 7px;
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 /* Products section */
 #products {
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#products #d_products {
+#products h3{
+  margin: auto;
+}
 
+#products #d_products {
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -235,26 +238,68 @@ header .logo {
 
 /* Services section */
 #services {
-  background-color: rgb(161, 228, 201);
+  background-color: rgb(161, 227, 202);
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 0;
+  flex-direction: column;
 }
 
 #services .service {
-  flex-basis: calc(33.33% - 2rem);
   margin-bottom: 2rem;
   margin-right: 10px;
-  background-color: #a1e4c9;;
+  background-color: #a1e4c9;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 #services h3 {
   margin-top: 0;
 }
+
+.con1 img{
+  max-width: 100%;
+  height: 17em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  #services {
+    background-color: rgb(161, 227, 202);
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+  
+  #services .service {
+    margin-bottom: 2rem;
+    margin-right: 10px;
+    background-color: #a1e4c9;
+    padding: 1rem;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  #services h3 {
+    margin-top: 0;
+  }
+  .con1{
+    display: inline;
+  }
+  .con1 img{
+    max-width: 100%;
+    height: 19em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 /* Extra section */
 #extra h2 {
@@ -264,8 +309,10 @@ header .logo {
 #extra img {
   max-width: 100%;
   height: auto;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 0.7rem;
 }
 
 /* Map section */
@@ -273,7 +320,12 @@ header .logo {
   background-color: rgb(96, 244, 194);
 }
 
-#map h2 {
+#map_heading{
+  margin-top: 2px;
+}
+
+#map_heading h2 {
+  padding: 0.5em;
   text-align: center;
 }
 
@@ -293,34 +345,45 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 0;
 }
 
+@media only screen and (min-width: 767px){
 #Directors .director {
   width: auto;
-  height: 100%;
-  flex-basis: calc(33.33% - 1rem);
+  height: auto;
   margin-bottom: 2rem;
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.director img {
-  max-width: 100%;
-  height: auto;
+.director #d1 {
+  width: 300px;
+  height: 300px;
 }
 .director #d2 {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 307px;
 }
-@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 765px) {
+  #Directors .director {
+    width: auto;
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
   .director #d1 {
     width: 300px;
-    height: 150px;
+    height: 300px;
   }
   .director #d2 {
     width: 300px;
-    height: 150px;
+    height: 307px;
   }
 }
 /* Contact section */
@@ -329,7 +392,49 @@ header .logo {
   padding: 50px 0;
   color: #f5f5f5;
 }
+.business-card {
+  margin: 0 auto;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  justify-content: center;
+}
 
+.name-title h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.name-title p {
+  margin: 0;
+  font-size: 16px;
+  color: #00aaff;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contact-item p {
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/*
 .container2 {
   width: 80%;
   margin: auto;
@@ -349,7 +454,7 @@ h2 {
   margin-right: auto;
   flex-basis: auto;
   margin-bottom: 30px;
-}
+} */
 
 /* 
 .form-group {
