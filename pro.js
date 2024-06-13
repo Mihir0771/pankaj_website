@@ -1,10 +1,7 @@
 // Sample data for products
 const products = [
-    { name: "Product 1", image: "res/pro/1.png", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { name: "Product 2", image: "res/pro/2.png", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { name: "Product 3", image: "res/pro/3.png", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { name: "Product 4", image: "res/pro/4.png", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { name: "Product 5", image: "res/pro/5.png", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }
+    { name: "DP-TAB - Diclofenac Sodium & Paracetamol Tablets", image: "res/pro/p1.png", description: "DP-TAB combines the potent anti-inflammatory and analgesic properties of Diclofenac Sodium with the fever-reducing and pain-relieving benefits of Paracetamol. This powerful formulation is designed to offer fast-acting and effective relief for a variety of conditions, making it an essential addition to your medicine cabinet." },
+    { name: "DPC-Syrup", image: "res/pro/p2.png", description: "DPC-Syrup is a professional-grade pharmaceutical syrup formulated with Dextromethorphan HBr, Phenylephrine HCl, and Chlorpheniramine Maleate. Each 5mL of the syrup contains 10 mg Dextromethorphan HBr, 5 mg Phenylephrine HCl, and 2 mg Chlorpheniramine Maleate, combined to provide effective relief from cough and cold symptoms." }
   ];
   
   // Function to display products on the page
@@ -34,4 +31,5 @@ const products = [
   
   // Display products when the page loads
   document.addEventListener('DOMContentLoaded', displayProducts);
+  
   
